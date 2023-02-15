@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+
+  @include media-breakpoint-down('lg') {
+    padding: 20px;
+  }
+
+  &.open {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 340px;
+    transform: translateY(0);
+    padding:20px;
+    // border-bottom-left-radius: 16px;
+    // border-bottom-right-radius: 16px;
+    background-color: #fff;
+    // box-shadow: 2px 2px 2px rgba(177, 176, 177, 0.15);
+  } 
+}
+
+

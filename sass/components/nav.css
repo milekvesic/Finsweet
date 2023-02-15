@@ -1,0 +1,14 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav.open {
+  max-width: 100%;
+  min-height: 400px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  padding: 20px;
+  background-color: #fff
+}

@@ -1,0 +1,13 @@
+.container-s{
+
+	@include media-breakpoint-down('lg') {
+        padding: 0px 20px;
+    }
+}
+
+.container-m{
+
+	@include media-breakpoint-down('lg') {
+        padding: 0px 20px;
+    }
+}

@@ -1,0 +1,121 @@
+
+body{
+    font-family: 'Roboto';
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url("../fonts/roboto/roboto_regular/roboto-regular-webfont.eot");
+    src: url("../fonts/roboto/roboto_regular/roboto-regular-webfont.svg");
+    src: url("../fonts/roboto/roboto_regular/roboto-regular-webfont.ttf");
+    src: url("../fonts/roboto/roboto_regular/roboto-regular-webfont.woff");
+    src: url("../fonts/roboto/roboto_regular/roboto-regular-webfont.woff2");
+    font-weight: normal;
+    font-style: normal;  
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url("../fonts/roboto/roboto_light/roboto-light-webfont.eot");
+    src: url("../fonts/roboto/roboto_light/roboto-light-webfont.svg");
+    src: url("../fonts/roboto/roboto_light/roboto-light-webfont.ttf");
+    src: url("../fonts/roboto/roboto_light/roboto-light-webfont.woff");
+    src: url("../fonts/roboto/roboto_light/roboto-light-webfont.woff2");
+    font-weight: light;
+    font-style: normal;  
+}
+
+@font-face{
+    font-family:'Roboto';
+    src: url("../fonts/roboto/roboto_bold/roboto-bold-webfont.eot");
+    src: url("../fonts/roboto/roboto_bold/roboto-bold-webfont.svg");
+    src: url("../fonts/roboto/roboto_bold/roboto-bold-webfont.ttf");
+    src: url("../fonts/roboto/roboto_bold/roboto-bold-webfont.woff");
+    src: url("../fonts/roboto/roboto_bold/roboto-bold-webfont.woff2");
+    font-weight: bold;
+    font-style: normal; 
+}
+
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../js/fonts/slick.eot');
+    src: url('../js/fonts/slick.svg');
+    src:  url('../js/fonts/slick.ttf');
+    src:  url('../js/fonts/slick.woff') 
+}
+
+h1{
+    font-size: 56px;
+    line-height: 110%;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: bold;
+    
+}
+
+h3{
+    font-size: 36px;
+    line-height: 130%;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+h6{
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+p{
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.p-small{
+    font-size: 14px;
+    padding-bottom: 48px;
+}
+
+
+.p-lg{
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.span-s{
+    font-size: 12px;;
+}
+
+@include media-breakpoint-down('md') {
+    h1 {
+        font-size:40px;
+    }
+
+    h2{
+       font-size: 30px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+}
+

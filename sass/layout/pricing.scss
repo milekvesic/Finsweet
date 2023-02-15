@@ -1,0 +1,245 @@
+
+.header{
+    text-align: center;
+    padding-bottom: 129px;
+
+    @include media-breakpoint-down('md'){
+        padding: 0px 20px;
+    } 
+}
+
+.header__content {
+    max-width: 529px;
+    width: 100%;
+    margin: auto;
+
+    &__title{
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    &__paragraph{
+        padding-bottom:24px;
+        font-size: 18px;
+    }
+}
+
+
+
+.pricing-tabs__wrapper{
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+    @include media-breakpoint-down('lg'){
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    } 
+
+}
+
+.pricing-plan{
+    max-width: 411px;
+    width: 100%;
+    min-height: 714px;
+    border-radius: 24px;
+    background-color: fff;
+
+    &--modify{
+        border-style: solid;
+        border-width: 4px;
+        border-color: #6b7cff;
+        background-image: linear-gradient(135deg, #d7e7f9, #d5f4ec);
+    }
+
+    &__header{
+        display: flex;
+        padding-right: 48px;
+        padding-top: 48px;
+        padding-left: 48px;
+    }
+
+    &__name{
+        text-align: start;
+    }
+}
+
+.pricing-plan_icon-wrapper{
+    margin-right: 24px;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #e6e6e6;
+}
+
+.pricing-plan_icon{
+    width: 20px;
+    height: 20px;
+
+    &--modify{
+        svg{
+            color:$primary-blue;
+        }
+    }
+
+    // &::before{
+    //     content: "";
+    //     display: table;
+    //     grid-column-start: 1;
+    //     grid-row-start: 1;
+    //     grid-column-end: 2;
+    //     grid-row-end: 2;
+    // }
+
+    // &::after{
+    //     content: "";
+    //     display: table;
+    //     grid-column-start: 1;
+    //     grid-row-start: 1;
+    //     grid-column-end: 2;
+    //     grid-row-end: 2;
+    // }
+}
+
+
+.pricing_plan__divider{
+    height: 1px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    background-color: #d8d8d8;
+}
+
+.pricing-plan__bottom{
+    padding-right: 48px;
+    padding-bottom: 48px;
+    padding-left: 48px;
+}
+
+.pricing-plan__bottom__wrepper{
+    display: grid;
+    text-align: center;
+}
+
+
+h4.yearly{
+    display: none;
+}
+
+.pricing-feature{
+    display: flex;
+    padding-bottom: 24px;
+
+    &__img{
+        margin-right: 22px;
+    }
+
+    &__paragraph{
+        font-weight: bold;
+    }
+}
+
+.pricing-plan__button__wrapper{
+    margin-top: 24px;
+}
+
+.paragraph_pricing{
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+
+.faq_component{
+    width: 1280px;
+    max-width: 100%;
+    height: 696px;
+    background: #F0F2FE;
+    border-radius: 24px;
+    margin: 0 auto 128px auto;
+    display: flex;
+    padding: 64px;
+    
+    @include media-breakpoint-down('lg'){
+        padding: 32px;
+    } 
+}
+
+.faq-content__left{
+    margin-right: 32px;
+
+    &__title{
+        padding-bottom: 32px;
+    }
+
+    @include media-breakpoint-down('lg'){
+        margin-bottom: 20px;
+    } 
+}
+
+.faq_items{
+    width: 60%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+
+    @include media-breakpoint-down('lg'){
+       width: 100%;
+    } 
+}
+
+.faq_item{
+    padding: 40px;
+    margin-bottom: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 24px;
+    background-color: #fff;
+    cursor: pointer;
+
+    @include media-breakpoint-down('lg'){
+        padding: 25px;
+    } 
+}
+
+.faq_question{
+    display: flex;display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.faq-icon{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin:0 0 0 32px;
+
+    &__line{
+        position: absolute;
+        top: 12px;
+        left: auto;
+        width: 20px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #000;
+
+        &--vertical{
+            transform: rotate(90deg);
+        }
+    } 
+}
+
+.faq_answer{
+    display: none;
+}

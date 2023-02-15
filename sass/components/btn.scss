@@ -1,0 +1,121 @@
+.btn {
+  cursor: pointer;
+  display: flex;
+  width: 144px;
+  height: 56px;
+  color: white;
+  background-color: $primary-black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 16px 40px 16px 40px;
+  margin: 8px 80px 8px 32px;
+
+  &:hover {
+    background-color: $primary-blue;
+  }
+}
+
+
+.btn-lg {
+  cursor: pointer;
+  display: flex;
+  width: 173px;
+  height: 56px;
+  color: white;
+  background-color: $primary-black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 16px, 40px, 16px, 40px;
+  margin: auto;
+
+  &:hover {
+    background-color: $primary-blue;
+  }
+}
+
+.btn-white {
+  cursor: pointer;
+  display: flex;
+  width: 152px;
+  height: 56px;
+  color: $primary-black;
+  background-color: $primary-white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 16px 40px;
+
+  &:hover {
+    background-color: $primary-blue;
+  }
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 30px;
+  top: 35px;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+
+  &__burger {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 3px;
+    background: $primary-black;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      width: 28px;
+      height: 3px;
+      background: $primary-black;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      width: 28px;
+      height: 3px;
+      background: $primary-black;
+    }
+
+    &.open {
+      transform: rotate(720deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+      }
+    }
+
+		@include media-breakpoint-up('lg') {
+			display: none;
+		}
+  }
+}

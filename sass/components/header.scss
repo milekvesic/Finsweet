@@ -1,0 +1,25 @@
+header {
+  width: 100%;
+  padding: 2px;
+  background-color: white;
+  display: flex;
+  max-width:1440px;
+  width: 100%;
+  height: 72px;
+  margin: 0 auto 96px auto;
+
+  @include media-breakpoint-down('lg') {
+    margin: 0 auto 32px auto;
+  }
+
+  .container-m{
+    padding: 0px;
+    max-width: 100%;
+
+    @include media-breakpoint-down('lg') {
+      z-index: 1;
+    }
+  }
+}
+  
+  

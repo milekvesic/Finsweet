@@ -1,0 +1,19 @@
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 72px;
+  margin: 32px auto;
+  max-width: 576px;
+}
+
+form input {
+  color: white;
+  padding-left: 15px;
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  background: white;
+  border-style: none;
+}
+/*# sourceMappingURL=form.css.map */

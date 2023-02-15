@@ -1,0 +1,47 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-container {
+  background-color: black;
+  background-size: cover;
+  color: white;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 64px 80px 48px 8px;
+}
+
+.links-column {
+  margin-left: 180px;
+}
+
+.links-column li {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.links-column ul {
+  display: -ms-grid;
+  display: grid;
+}
+
+.links-column p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.links-column ul li {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+  text-align: justify;
+}
+/*# sourceMappingURL=footer.css.map */

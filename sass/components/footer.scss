@@ -1,0 +1,154 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-container{
+    background-color: $primary-black;
+    background-size: cover;
+    color:$primary-white;
+    max-width: 1440px;
+    width: 100%;
+    padding: 64px 20px;
+    margin: auto;
+
+    @include media-breakpoint-down('lg'){
+       padding: 64px 20px;
+       margin: auto;
+    }
+}
+
+.footer__cols{
+    display: flex;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    @include media-breakpoint-down('lg'){
+        flex-wrap: wrap;
+    }
+
+
+    &__paragraph{
+        margin: 0;
+        padding-bottom: 8px;
+        font-weight: bold;
+    }
+
+    &__links{
+        max-width: 230px;
+        width: 100%;
+        min-height: 155px;
+
+        @include media-breakpoint-down('md'){
+            max-width: 190px;
+        }
+
+        li{
+            list-style: none;
+            margin-bottom: 8px;
+        }
+
+        ul{
+            display: grid;
+        }
+        
+        a{
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $primary-white;
+            opacity: 0.6;
+            text-align: justify;
+
+            &:hover{
+                color: $primary-blue;
+            }
+        }
+    }
+}
+
+.right-content{
+    max-Width:410px;
+    width: 100%;
+
+    &__logo{
+        padding-bottom: 38px;
+
+        @include media-breakpoint-down('md'){
+            padding-bottom: 24px;
+        }
+    }
+
+    @include media-breakpoint-down('md'){
+        display: block;
+    }
+}
+
+.connect{
+    position: relative;
+    width: 100%;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    @include media-breakpoint-down('lg'){
+       flex-direction: column-reverse;
+       -webkit-align-items: flex-start;
+    }
+
+    &__parahraph{
+        margin: 0 32px;
+        font-size: 12px;
+
+        @include media-breakpoint-down('lg'){
+            margin: 0;
+        }
+    }
+}
+
+.footer__line{
+    max-width: 442px;
+    width: 100%;
+    border: 1px solid #888888;
+
+    @include media-breakpoint-down('lg'){
+        display: none;
+    }
+}
+
+.connect__social{
+    margin-right: 32px;
+
+    @include media-breakpoint-down('lg'){
+        margin: 0;
+        padding-bottom: 16px;
+    }
+    
+    &__icon{
+        margin-right: 24px;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:last-child{
+            margin-right:0;
+        }
+    }
+
+    &__icon{
+        path:hover{
+            fill: $primary-blue;
+        }
+    }
+}
+
+
+  
+  
+

@@ -1,0 +1,31 @@
+// Bootstrap 5 
+@import '../sass/vendor/bootstrap-5.0.2/scss/functions';
+@import '../sass/vendor/bootstrap-5.0.2/scss/variables';
+@import '../sass/vendor/bootstrap-5.0.2/scss/mixins';
+
+// base 
+@import 'base/reset.scss';
+@import 'base/typography.scss';
+@import 'base/body.scss';
+@import 'base/main.scss';
+
+// abstracts
+@import 'abstract/function';
+@import 'abstract/mixin';
+@import 'abstract/variables.scss';
+
+// components
+@import 'components/nav.scss';
+@import 'components/menu.scss';
+@import 'components/header.scss';
+@import 'components/btn.scss';
+@import 'components/form.scss';
+@import 'components/footer.scss';
+@import 'components/container.scss';
+
+
+// layout
+@import 'layout/home.scss';
+@import 'layout/pricing.scss';
+
+

@@ -1,0 +1,121 @@
+.header {
+  text-align: center;
+}
+
+.header__content {
+  max-width: 529px;
+  width: 100%;
+  margin: auto;
+}
+
+.header__content__title {
+  padding-bottom: 24px;
+}
+
+.header__content__paragraph {
+  padding-bottom: 24px;
+}
+
+.pricing-tabs__wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 16px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pricing-plan {
+  max-width: 411px;
+  width: 100%;
+  min-height: 714px;
+  border-radius: 24px;
+  background-color: fff;
+}
+
+.pricing-plan--modify {
+  border-style: solid;
+  border-width: 0.25rem;
+  border-color: #6b7cff;
+  background-image: linear-gradient(135deg, #d7e7f9, #d5f4ec);
+}
+
+.pricing-plan__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 48px;
+  padding-top: 48px;
+  padding-left: 48px;
+}
+
+.pricing-plan__name {
+  text-align: start;
+}
+
+.pricing-plan_icon-wrapper {
+  margin-right: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  background-color: #e6e6e6;
+}
+
+.pricing-plan_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.pricing-plan_icon--modify svg {
+  color: #6b7cff;
+}
+
+.pricing_plan__divider {
+  height: 1px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  background-color: #d8d8d8;
+}
+
+.pricing-plan__bottom {
+  padding-right: 48px;
+  padding-bottom: 48px;
+  padding-left: 48px;
+}
+
+.pricing-plan__bottom__wrepper {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+.pricing-feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 24px;
+}
+
+.pricing-feature__img {
+  margin-right: 22px;
+}
+
+.pricing-feature__paragraph {
+  font-weight: bold;
+}
+
+.pricing-plan__button__wrapper {
+  margin-top: 24px;
+}
+/*# sourceMappingURL=pricing.css.map */
