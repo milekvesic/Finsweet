@@ -735,7 +735,6 @@ form .btn-lg {
   background-color: #1D2130;
   background-size: cover;
   color: #ffffff;
-  max-width: 1440px;
   width: 100%;
   padding: 64px 20px;
   margin: auto;
@@ -1317,7 +1316,7 @@ form .btn-lg {
   grid-column-gap: 16px;
   grid-template-columns: 1fr 1fr 1fr;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .pricing-tabs__wrapper {
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   }
@@ -1462,18 +1461,22 @@ h4.yearly {
 }
 @media (max-width: 991.98px) {
   .faq_item {
-    padding: 25px;
+    padding: 24px 32px;
   }
 }
 
 .faq_question {
-  display: flex;
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+}
+@media (max-width: 767.98px) {
+  .faq_question__title {
+    font-size: 20px;
+  }
 }
 
 .faq-icon {
@@ -1493,10 +1496,16 @@ h4.yearly {
 }
 .faq-icon__line--vertical {
   transform: rotate(90deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(90deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
 }
 
 .faq_answer {
-  display: none;
+  width: 100%;
+  height: 0px;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -35,7 +35,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 
 
-    @include media-breakpoint-down('lg'){
+    @include media-breakpoint-down('md'){
         grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     } 
 
@@ -204,19 +204,27 @@ h4.yearly{
     border-radius: 24px;
     background-color: #fff;
     cursor: pointer;
+   
 
     @include media-breakpoint-down('lg'){
-        padding: 25px;
+        padding: 24px 32px;
     } 
 }
 
 .faq_question{
-    display: flex;display: flex;
+    display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
+
+    &__title{
+
+        @include media-breakpoint-down('md'){
+            font-size: 20px;
+        } 
+    }
 }
 
 .faq-icon{
@@ -224,6 +232,7 @@ h4.yearly{
     width: 32px;
     height: 32px;
     margin:0 0 0 32px;
+    
 
     &__line{
         position: absolute;
@@ -236,10 +245,15 @@ h4.yearly{
 
         &--vertical{
             transform: rotate(90deg);
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(90deg) skew(0deg, 0deg); transform-style: preserve-3d;
         }
     } 
 }
 
 .faq_answer{
-    display: none;
+    width: 100%; 
+    height: 0px;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
 }
